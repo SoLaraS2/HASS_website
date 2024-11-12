@@ -4,11 +4,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #3f946083;
+    background-color: #b18b65;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     min-height: 100vh;
+    font-family: cursive;
 }
 
 /* Card Styles */
@@ -32,7 +33,7 @@ body {
     align-items: center;
     padding: 20px;
     text-align: center;
-    background-color: #3f946083;
+    background-color: #c7a17a;
 }
 
 .card-back {
@@ -52,35 +53,29 @@ body {
     margin-bottom: 10px;
 }
 
-/* Skill Progress Bars */
-.skill-container {
-    margin-top: 20px;
-}
-
-.skill {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.progress-bar {
+.header-box {
     display: flex;
+    align-items: center; /* Aligns the items horizontally in the center */
+    color: #fff;
     justify-content: center;
-    gap: 2px;
+} 
+
+.container1 {
+    display: flex;
+    align-items: center; /* Vertically aligns the image and text */
 }
 
-.block {
-    width: 15px;
-    height: 15px;
-    background-color: #9eecbc83; /* Unfilled block color */
-    border-radius: 3px;
+.side-image {
+    width: 200px;
+    height: 240px;
+    border-radius: 50%;
+    margin-right: 10px; /* Adds space between image and text */
+    flex-shrink: 0; /* Prevents the image from shrinking */
 }
 
-.block.filled {
-    background-color: #3f946083; /* Filled block color */
-}
 
-/* Header, Description, Button, and Schedule Boxes */
-.header-box, .description-box, .schedule-box {
+/* Header, Description, Button */
+.header-box, .description-box{
     width: 100%;
     padding: 20px;
     border-radius: 8px;
@@ -89,22 +84,17 @@ body {
 }
 
 .header-box {
-    background-color: #367e5183; /* Light orange for header */
+    background-color: #9e7a57; 
 }
 
 .description-box {
-    background-color: #367e5183; /* Light blue for description */
+    background-color: #9e7a57; 
 }
 
-.schedule-box {
-    max-width: 800px;
-    background-color: #367e5183;
-    margin-top: 20px;
-}
 
 /* Button Box */
 .button-box {
-    background-color: #02180a83; /* Light green for button box */
+    background-color: #9e7a57; 
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -118,7 +108,7 @@ body {
     width: 100%;
     max-height: 1500px;
     max-width: 900px;
-    background-color: #f2ddf5;
+    background-color: #9e7a57;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
@@ -142,50 +132,6 @@ body {
     min-height: 340px; /* Add a minimum height */
 }
 
-/* Schedule Table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-    color: #ffffff;
-}
-
-th {
-    background-color: #367e5183;
-    color: white;
-    font-weight: bold;
-}
-
-
-
-tr:hover {
-    background-color: #cfd8dc;
-}
-
-td:first-child {
-    font-weight: bold;
-    color: #114d23;
-}
-
-.schedule-box td, table a {
-    cursor: pointer;
-}
-
-table a {
-    color: #2bd102;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-table a:hover {
-    text-decoration: underline;
-}
 
 /* Modal Style */
 .modal {
@@ -216,7 +162,7 @@ table a:hover {
 }
 
 .footer {
-    background-color: #367e5183;
+    background-color: #8a6948;
     padding: 20px;
     text-align: center;
     font-size: 0.9em;
@@ -237,9 +183,17 @@ table a:hover {
 .footer-nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #104219;
+    color: #5a4026;
 }
 
 .footer-nav a:hover {
     text-decoration: underline;
+}
+
+/* poem containers*/
+
+.description-container {
+  display: flex;
+  justify-content: space-between; /* Spreads them out evenly */
+  gap: 20px; /* Optional: Adds some space between the boxes */
 }
