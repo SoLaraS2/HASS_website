@@ -67,8 +67,8 @@ body {
 
 .side-image {
     width: 200px;
-    height: 240px;
-    border-radius: 50%;
+    height: 250px;
+    border-radius:15px ;
     margin-right: 10px; /* Adds space between image and text */
     flex-shrink: 0; /* Prevents the image from shrinking */
 }
