@@ -306,18 +306,48 @@
     But he felt a warm hand on his free arm, along with his shoulder being soaked in an enveloping wet warmth accompanied by low whimpers. He didn’t even have to look to know who it was. He could finally touch his real Claire again. He felt apologetic for involving so many people. But above all else Felix regretted involving Claire in this. In a mess he hadn’t even known the first layer of. But he sensed she already knew how he felt, and just gave in. Holding her in a one arm embrace as strong as any hugs can be. 
     
     His true Claire, touched with his true hands.
+    <button class="popup-button" onclick="openModal('Although this isn’t the longest piece I have written, it is the short story that has undergone the most changes. There were so many ideas surrounding this world and the company’s plan, as well as Felix’s own crazy goals, that conveying it all, while still not quite saying it straight out, was challenging. I considered excluding other big elements like Narratron’s wishing mechanism, but the story felt empty without it. So instead I opted for more instances where it happens, and clear mentions back to moments when the wishes were made. Which will hopefully click in the reader’s mind and reward them for paying attention. Dialogue in this piece was my proudest achievement, as I spoke everything out loud so many times I almost have their talks memorized. I attempted to relay the characters’ personalities along with their mood in each line spoken, as well as the thoughts. What I found hard was to choose which thoughts should be presented and which ones shouldn’t, since Narratron is technically the one picking, and he is censoring things in his blog left and right.One of the main things added were the “scan completed” and code numbers for each time Narratron deletes content, and this seems to clear up quite a bit of confusion. Overall, the action narration had to be a lot clearer, since my literal narrator writes in such a complicated voice, almost with his own personality, yet needs to deliver present tense activities without over-explaining the world.The main characters in the story all have complicated personalities and relationships, making decisions many of us wouldn’t have, but that is what makes them so interesting to follow. Cloning is indeed an overused trope, but this piece attempts to bring a new way/perspective of this idea. Where not only is the company behind Narratron hoping to replace everyone with clones they can control, but still keep their support by providing entertainment through the blog posts, making humans more susceptible for the transfer of consciousness.Narratron definitely needs even more edits to truly hold itself as a “perfect” story, but I enjoy it the way it is right now, and I hope you do too!')">
+      Aesthetic statement
+    </button>
     <button class="trash-button" onclick="openTerms()">
       <img src="https://img.icons8.com/ios-filled/50/ffffff/trash.png" alt="Trash Icon">
   </button>
     </div>
   </div>
-  <script>
-    // Function to open the Terms of Service page
-    function openTerms() {
-        window.open("terms_of_service.html", "_self"); // Opens in the same tab
-    }
-</script>
 
+
+</div>
+   <!-- Modal Popup -->
+   <div id="poemModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modalText"></p>
+    </div>
+</div>
+
+      <!-- JavaScript for Modal -->
+      <script>
+        function openModal(message) {
+            // Set the content of the modal dynamically
+            document.getElementById("modalText").innerText = message;
+            document.getElementById("poemModal").style.display = "block";
+        }
+        function openTerms() {
+      window.open("terms_of_service.html", "_self"); // Opens in the same tab
+  }
+
+        function closeModal() {
+            document.getElementById("poemModal").style.display = "none";
+        }
+
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+            const modal = document.getElementById("poemModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
 
 
   <footer class="footer">
