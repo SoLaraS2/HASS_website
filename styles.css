@@ -11,7 +11,105 @@ body {
     min-height: 100vh;
     font-family: cursive;
 }
+pre {
+    white-space: pre-wrap; /* Preserves spaces and wraps text within the box */
+    margin: 0; /* Removes extra margin around preformatted text */
+}
+.formatted-text {
+    font-family: cursive; /* Applies a cursive font style */
+    white-space: pre-wrap; /* Preserves formatting */
+    word-wrap: break-word; /* Handles long words gracefully */
+    line-height: 1.6; /* Improves readability */
+    text-align: left;
+}
 
+
+.description-box {
+    color: #fff;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.trash-button {
+    position: fixed;
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #89692ad1; /* Red background */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.trash-button:hover {
+    background-color: #89692ae9; /* Darker red on hover */
+}
+
+.trash-button img {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+}
+/* Styling for the button */
+.popup-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #b6906a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-button:hover {
+    background-color: #9e7a57;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #333;
+    color: #b18b65;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #f00;
+    cursor: pointer;
+}
 /* Card Styles */
 .card {
     position: relative;
